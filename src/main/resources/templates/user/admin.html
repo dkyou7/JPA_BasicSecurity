@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header"></head>
+<body>
+<div class="container">
+    <div th:replace="fragments/bodyHeader :: bodyHeader"></div>
+    <div class="jumbotron">
+        <h1>Daily Health</h1>
+        <p class="lead">회원 기능입니다.</p>
+        <p>
+            <a class="btn btn-lg btn-secondary" href="/user/new">회원 가입</a>
+            <a class="btn btn-lg btn-secondary" href="/user">회원 목록</a>
+        </p>
+        <p class="diary">일지를 작성해보자.</p>
+        <p>
+            <a class="btn btn-lg btn-dark" href="/board/new">일지 쓰기</a>
+            <a class="btn btn-lg btn-dark" href="/boards">일지 목록</a>
+        </p>
+    </div>
+    <div th:replace="fragments/footer :: footer"></div>
+</div> <!-- /container -->
+</body>
+</html>
